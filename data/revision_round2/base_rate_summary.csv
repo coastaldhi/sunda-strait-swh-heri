@@ -1,0 +1,7 @@
+rule,set,detected,n,mean_base_rate,p_all_by_chance
+HERI,calibration,6,6,0.3502,0.0013
+HERI,other,7,7,0.4076,0.001
+SWH>P90 (1.12 m),calibration,5,6,0.2345,0.0001
+SWH>P90 (1.12 m),other,7,7,0.273,0.0001
+SWH>P95 (1.23 m),calibration,5,6,0.1528,0.0
+SWH>P95 (1.23 m),other,7,7,0.1839,0.0

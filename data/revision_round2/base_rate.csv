@@ -1,0 +1,40 @@
+no,set,month,window_days,base_rate,n_windows,detected,rule
+5,calibration,12,1,0.433,453,True,HERI
+7,calibration,11,1,0.156,448,True,HERI
+8,calibration,12,2,0.517,447,True,HERI
+9,calibration,2,2,0.285,421,True,HERI
+12,calibration,3,2,0.355,456,True,HERI
+13,calibration,3,2,0.355,456,True,HERI
+1,other,12,3,0.577,440,True,HERI
+2,other,11,1,0.156,448,True,HERI
+6,other,3,1,0.277,459,True,HERI
+10,other,12,1,0.433,453,True,HERI
+11,other,12,4,0.622,434,True,HERI
+14,other,3,2,0.355,456,True,HERI
+15,other,12,1,0.433,453,True,HERI
+5,calibration,12,1,0.269,453,False,SWH>P90 (1.12 m)
+7,calibration,11,1,0.094,448,True,SWH>P90 (1.12 m)
+8,calibration,12,2,0.342,447,True,SWH>P90 (1.12 m)
+9,calibration,2,2,0.228,421,True,SWH>P90 (1.12 m)
+12,calibration,3,2,0.237,456,True,SWH>P90 (1.12 m)
+13,calibration,3,2,0.237,456,True,SWH>P90 (1.12 m)
+1,other,12,3,0.405,440,True,SWH>P90 (1.12 m)
+2,other,11,1,0.094,448,True,SWH>P90 (1.12 m)
+6,other,3,1,0.181,459,True,SWH>P90 (1.12 m)
+10,other,12,1,0.269,453,True,SWH>P90 (1.12 m)
+11,other,12,4,0.456,434,True,SWH>P90 (1.12 m)
+14,other,3,2,0.237,456,True,SWH>P90 (1.12 m)
+15,other,12,1,0.269,453,True,SWH>P90 (1.12 m)
+5,calibration,12,1,0.183,453,False,SWH>P95 (1.23 m)
+7,calibration,11,1,0.045,448,True,SWH>P95 (1.23 m)
+8,calibration,12,2,0.239,447,True,SWH>P95 (1.23 m)
+9,calibration,2,2,0.138,421,True,SWH>P95 (1.23 m)
+12,calibration,3,2,0.156,456,True,SWH>P95 (1.23 m)
+13,calibration,3,2,0.156,456,True,SWH>P95 (1.23 m)
+1,other,12,3,0.282,440,True,SWH>P95 (1.23 m)
+2,other,11,1,0.045,448,True,SWH>P95 (1.23 m)
+6,other,3,1,0.118,459,True,SWH>P95 (1.23 m)
+10,other,12,1,0.183,453,True,SWH>P95 (1.23 m)
+11,other,12,4,0.32,434,True,SWH>P95 (1.23 m)
+14,other,3,2,0.156,456,True,SWH>P95 (1.23 m)
+15,other,12,1,0.183,453,True,SWH>P95 (1.23 m)

@@ -1,27 +1,19 @@
-# Significant Wave Height Prediction and HERI
-## Sunda Strait (Merak-Bakauheni Ferry Corridor)
+# Data
 
-Code for the paper:
-> Aldhi et al. (2025). *Significant Wave Height Prediction and
-> Harbour Entry Risk Index (HERI) in the Sunda Strait using
-> ERA5-Based Deep Learning.* [Journal name]
+## ERA5 download (Copernicus CDS)
 
-## Data
-ERA5 reanalysis data (2010–2024) downloaded via Copernicus CDS API.
-- Grid point: −6.0°S, 105.5°E
-- Variables: SWH, U10, V10, MWP, MWD, MSLP
-- See `data/README_data.md` for download instructions.
+Dataset `reanalysis-era5-single-levels`, product type `reanalysis`, hourly, 2010-01-01 to 2024-12-31,
+area [N, W, S, E] = [-5.5, 104.5, -7.0, 106.5], format NetCDF, **no `grid` keyword** (native grids).
 
-## Requirements
-```
-pip install -r requirements.txt
-```
+- Wave variables (0.5° grid): `significant_height_of_combined_wind_waves_and_swell`, `mean_wave_period`, `mean_wave_direction`
+- Atmospheric variables (0.25° grid): `10m_u_component_of_wind`, `10m_v_component_of_wind`, `mean_sea_level_pressure`
 
-## Usage
-1. Download ERA5 data (see data/)
-2. Run preprocessing: `python preprocessing/mergeera5_v2.py`
-3. Train models: `python models/train_models.py`
-4. Evaluate: `python evaluation/04_evaluate.py`
+Raw monthly files go to `data/era5_raw/` (not included; download with the CDS API).
+`preprocessing/mergeera5_v2.py` extracts the series at P1–P5 to `data/era5_processed/`.
 
-## Citation
-[To be updated after publication]
+## Included derived data
+
+- `era5_processed/` – hourly series at P1–P5 (ERA5-derived; Copernicus licence)
+- `rolling_origin/`, `predictive_heri/`, `multioutput_gru/`, `revision_round2/` – results of the scripts in `analysis/`
+
+All times are UTC. Incident times in the catalogue are given in WIB (UTC + 7 h) and UTC.

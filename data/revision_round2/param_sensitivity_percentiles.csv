@@ -1,0 +1,7 @@
+boundary,percentile,threshold,pct_hours_SAFE,pct_hours_VD,calib_events_with_VD
+SAFE/CAUTION,70.0,0.368,70.0,,
+SAFE/CAUTION,75.0,0.382,75.0,,
+SAFE/CAUTION,80.0,0.402,80.0,,
+DANGEROUS/VD,99.5,0.675,,0.53,3.0
+DANGEROUS/VD,99.9,0.727,,0.2,1.0
+DANGEROUS/VD,99.95,0.744,,0.17,1.0

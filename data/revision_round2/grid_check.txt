@@ -1,0 +1,6 @@
+wave: file=era5_wave_2010_01.nc | lat -7.0..-5.5 step=-0.5 | lon 104.5..106.5 step=0.5 | vars=['swh', 'mwp', 'mwd', 'pp1d']
+  lat  -5.50:  104.50:LAND  105.00:LAND  105.50:LAND  106.00:sea  106.50:sea
+  lat  -6.00:  104.50:sea  105.00:sea  105.50:sea  106.00:LAND  106.50:LAND
+  lat  -6.50:  104.50:sea  105.00:sea  105.50:sea  106.00:LAND  106.50:LAND
+  lat  -7.00:  104.50:sea  105.00:sea  105.50:sea  106.00:sea  106.50:LAND
+surface: file=era5_surface_2010_01.nc | lat -7.0..-5.5 step=-0.25 | lon 104.5..106.5 step=0.25 | vars=['u10', 'v10', 'msl']

@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+xarray
+netCDF4
+cdsapi
+tensorflow==2.16.1
+keras==3.14.1
+xgboost==3.2.0
