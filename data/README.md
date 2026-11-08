@@ -15,5 +15,6 @@ Raw monthly files go to `data/era5_raw/` (not included; download with the CDS AP
 
 - `era5_processed/` – hourly series at P1–P5 (ERA5-derived; Copernicus licence)
 - `rolling_origin/`, `predictive_heri/`, `multioutput_gru/`, `revision_round2/` – results of the scripts in `analysis/`
+- The columns HERI and HERI_cat in these files come from an earlier version of the index and are not used; all HERI values in the paper are recomputed by the scripts in analysis/
 
 All times are UTC. Incident times in the catalogue are given in WIB (UTC + 7 h) and UTC.
